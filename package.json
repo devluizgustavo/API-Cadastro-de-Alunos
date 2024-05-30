@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.3.0",
+    "cli": "^1.0.1",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -21,10 +22,12 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "globals": "^15.3.0",
     "nodemon": "^3.1.2",
+    "sequelize": "^6.37.3",
     "sucrase": "^3.35.0"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "mariadb": "^3.3.0"
   }
 }
