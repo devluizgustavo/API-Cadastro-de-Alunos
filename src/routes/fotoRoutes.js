@@ -1,10 +1,9 @@
 import { Router } from "express";
-import loginRequire from '../middlewares/loginRequired';
-
+import loginRequired from "../middlewares/loginRequired.js"
 import FotoController from "../controllers/FotoController";
 
 const router = new Router();
 
-router.post("/", loginRequire, FotoController.store);
+router.post("/", loginRequired, FotoController.store);
 
 export default router;
