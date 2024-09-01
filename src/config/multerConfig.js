@@ -16,7 +16,7 @@ export default {
     storage: multer.diskStorage({
     //Local aonde será salvo
     destination: (req, file, cb) => {
-      cb(null, resolve(__dirname, '..', '..', 'uploads'));
+      cb(null, resolve(__dirname, '..', '..', 'uploads', 'images'));
     },
     //Nome do arquivo
     filename: (req, file, cb) => {
