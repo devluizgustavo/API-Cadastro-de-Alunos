@@ -10,7 +10,7 @@ const router = new Router();
 // router.get("/:id", userController.show); //Listar um usuário
 
 //Pode existir para o usuário fazer o login
-router.post("/", userController.store);
+router.post("/", loginRequired, userController.store);
 
 //Podem existir, PORÉM tem que ser passado um middleware para checar se o usuário está logado e usar o ID dele para atualizar ou deletar algo dentro da conta dele.
 router.put("/", loginRequired, userController.update);
